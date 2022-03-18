@@ -52,15 +52,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-	if (list->current == NULL)
-		exit (1);
-	else if (list->current->next == NULL)
-			exit(1);
-		else
-		{
-			list->current = list->current->next;
-		}
-	return list->current->data;
+	return NULL;
 }
 
 void * lastList(List * list) {

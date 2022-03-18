@@ -94,3 +94,9 @@ Fri Mar 18 03:21:52 UTC 2022:
  tests:  1|0
    [ INFO ] llamando a firstList
 e242d29
+Fri Mar 18 03:22:59 UTC 2022: 
+ list.c | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+ tests:  1|0
+   [ INFO ] llamando a firstList
+5689bd3
