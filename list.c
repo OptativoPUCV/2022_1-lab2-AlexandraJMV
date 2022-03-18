@@ -47,13 +47,15 @@ void * firstList(List * list) {
 		list->current = list->head;
 		return list->current->data;
 	}
+	else
+		return NULL;
 }
 
 void * nextList(List * list) {
 	if (list->current == NULL)
-		exit (1);
+		return NULL;
 	else if (list->current->next == NULL)
-			exit(1);
+			return NULL;
 		else
 		{
 			list->current = list->current->next;
