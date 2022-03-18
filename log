@@ -111,3 +111,14 @@ Fri Mar 18 03:24:32 UTC 2022:
  1 file changed, 5 insertions(+), 6 deletions(-)
  tests:  0|0
 8e760e4
+Fri Mar 18 03:25:39 UTC 2022: 
+ list.c | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+10287bc

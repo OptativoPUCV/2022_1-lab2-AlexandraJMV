@@ -42,15 +42,22 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-
-	list->current = list->head;
-	return list->current->data;
-
+	if (list->head != NULL)
+	{
+		list->current = list->head;
+		return list->current->data;
+	}
 }
 
 void * nextList(List * list) {
-	
-	list->current = list->current->next;
+	if (list->current == NULL)
+		exit (1);
+	else if (list->current->next == NULL)
+			exit(1);
+		else
+		{
+			list->current = list->current->next;
+		}
 	return list->current->data;
 }
 
