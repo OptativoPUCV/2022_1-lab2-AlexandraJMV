@@ -155,9 +155,14 @@ void * popCurrent(List * list) {
 	}
 	else if (list->current == list->head)
 		{
+			//CREAR AUXILIAR PARA LIBERAR EL CURRENT ANTERIOR///////
+			Node * aux_free = list->current;
+			
 			list->head = list->current->next;
 			list->current->next->prev = NULL;
 			list->current = list->current->next;
+
+			free(aux_free);
 			
 		}
 		else if (list->current == list->tail)
@@ -172,7 +177,6 @@ void * popCurrent(List * list) {
 				list->current->next->prev = list->current->prev;
 				list->current = list->current->next;
 			}
-	
     return aux_node->data;
 }
 
