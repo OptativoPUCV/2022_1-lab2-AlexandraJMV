@@ -2,3 +2,19 @@ Fri Mar 18 00:57:22 UTC 2022:
  tests:  0|6
 total_score: 0/70
 d830910
+Fri Mar 18 02:47:37 UTC 2022: 
+ list.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:2: error: expected ‘,’ or ‘;’ before ‘if’
+  if (lista == NULL)
+  ^~
+list.c:35:2: error: ‘else’ without a previous ‘if’
+  else
+  ^~~~
+list.c:40:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+Compilation failed
+3334267
