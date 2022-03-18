@@ -100,3 +100,9 @@ Fri Mar 18 03:22:59 UTC 2022:
  tests:  1|0
    [ INFO ] llamando a firstList
 5689bd3
+Fri Mar 18 03:23:28 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+d99fb68

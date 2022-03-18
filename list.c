@@ -48,7 +48,7 @@ void * firstList(List * list) {
 		return list->current->data;
 	}
 	else
-    	exit(1);
+    	return NULL;
 }
 
 void * nextList(List * list) {
